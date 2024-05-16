@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Form -TO DO lIST</title>
+    <link rel="stylesheet" href="Login page.css">
+  </head>
+  <body style="background-image: url(wp9764093-login-page-wallpapers.jpg);">
+    <div class="center">
+      <h1>Login</h1>
+      <form method="post">
+        <div class="txt_field">
+          <input type="text" required placeholder="Username" id="username" aria-required="true">
+          <span></span>
+        </div>
+        <div class="txt_field">
+          <input type="password" placeholder="Password" id="password" required>
+          <span></span>
+        </div>
+        <div class="pass">Forgot Password?</div>
+        <button class="login-btn" onclick="func()">LOGIN</button>
+        <div class="signup_link">
+          Not a member? <a href="#">Signup</a>
+        </div>
+      </form>
+      </div>
+      <script>
+        function func(){
+          var email=document.getElementById("username").value;
+          var password=document.getElementById("password").value;
+          if(email=="admin@gmail.com" && password=="admin123"){
+            window.location.assign("Main Site.html");
+            alert("Login Successfully");
+          }
+          else{
+            alert("Invalid Login Information")
+            return;
+          }
+        }
+      </script>
+  </body>
+
+</html>
